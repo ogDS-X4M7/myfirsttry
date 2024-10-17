@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    /* 切换到移动端模式长按会看到背景高亮
+    实际上手机看网页没有这样的情况，设置清除 */
+}
+
+img,
+a {
+    -webkit-touch-callout: none;
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 37.5px !important;
+    }
+}
+
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #F2F4F7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #fff;
+    text-align: center;
+    height: 19.12rem;
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            display: flex;
+            flex: 33.33%;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1.2rem;
+
+            img {
+                width: 3.7067rem;
+                height: 3.7067rem;
+            }
+
+            span {
+                font-size: .6667rem;
+                color: #707070;
+                padding-top: .4rem;
+                padding-bottom: .2667rem;
+            }
+        }
+    }
+
+    .practice {
+        img {
+            width: 19.2533rem;
+            height: 4.0533rem;
+            margin-top: 1.3333rem;
+        }
+    }
+}
+
+.instruction {
+    height: 15.3333rem;
+    background-color: #fff;
+    margin-top: .2667rem;
+
+    .instruct-hd {
+        height: 2.6667rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 .5867rem;
+
+        h4 {
+            font-size: .7467rem;
+            color: #333333;
+
+            img {
+                width: 1.0133rem;
+                height: 1.0133rem;
+                vertical-align: middle;
+            }
+        }
+
+        a {
+            font-size: .5867rem;
+            color: #999999;
+        }
+    }
+
+    .instruct-bd {
+        position: relative;
+        height: 12.64rem;
+
+        .swiper-container {
+            width: 14.32rem;
+            height: 11.6267rem;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            transition: 300ms;
+            transform: scale(0.6);
+            opacity: .3;
+
+            img {
+                width: 9.0133rem;
+                height: 10.0267rem;
+                margin-bottom: .5333rem;
+            }
+
+            a {
+                font-size: .6667rem;
+                color: #333333;
+            }
+        }
+
+        .swiper-slide-active,
+        .swiper-slide-duplicate-active {
+            transform: scale(1);
+            z-index: 1;
+            opacity: 1;
+        }
+    }
+}
+
+.study {
+    height: 15.3333rem;
+    background-color: #fff;
+    margin-top: .2667rem;
+    padding-bottom: 1.0667rem;
+    .study-hd {
+        height: 2.6667rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 .5867rem;
+
+        h4 {
+            font-size: .7467rem;
+            color: #333333;
+
+            img {
+                width: 1.0133rem;
+                height: 1.0133rem;
+                vertical-align: middle;
+            }
+        }
+
+        a {
+            font-size: .5867rem;
+            color: #999999;
+        }
+    }
+
+    .study-bd {
+        overflow: hidden;
+        position: relative;
+        height: 10.32rem;
+        padding-top: .4rem;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            margin-left: .64rem;
+        }
+
+        .swiper-slide {
+            width: 7.7333rem !important;
+            height: 9.0133rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+
+        .swiper-slide img {
+            display: block;
+            margin: 0 auto;
+            width: 7.2533rem;
+            height: 4.56rem;
+            // object-fit: cover;
+
+        }
+
+        h5 {
+            font-size: .8rem;
+            padding: .4267rem .3467rem;
+            color: #333333;
+            font-weight: 400;
+            margin-bottom: .2667rem;
+        }
+
+        p {
+            padding-left: .3467rem;
+            font-size: .5333rem;
+            color: #FF4A0A;
+        }
+
+        span {
+            color: #A1A1A1;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 3.04rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 999;
+    a {
+        display: flex;
+        flex: 1;
+        color: #666;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: .5867rem;
+        img {
+            width: 1.0667rem;
+            height: 1.04rem;
+            &:nth-of-type(1) {
+                width: 1.04rem;
+                height: 1.0933rem;
+            }
+            &:nth-of-type(2) {
+                width: 1.0667rem;
+                height: .88rem;
+            }
+        }
+        p {
+            &:nth-of-type(1) {
+                color: #2ccac7;
+            }
+        }
+    }
+}

@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  /* 切换到移动端模式长按会看到背景高亮
+    实际上手机看网页没有这样的情况，设置清除 */
+}
+img,
+a {
+  -webkit-touch-callout: none;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #F2F4F7;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  background-color: #fff;
+  text-align: center;
+  height: 19.12rem;
+}
+.header .nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header .nav a {
+  display: flex;
+  flex: 33.33%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.2rem;
+}
+.header .nav a img {
+  width: 3.7067rem;
+  height: 3.7067rem;
+}
+.header .nav a span {
+  font-size: 0.6667rem;
+  color: #707070;
+  padding-top: 0.4rem;
+  padding-bottom: 0.2667rem;
+}
+.header .practice img {
+  width: 19.2533rem;
+  height: 4.0533rem;
+  margin-top: 1.3333rem;
+}
+.instruction {
+  height: 15.3333rem;
+  background-color: #fff;
+  margin-top: 0.2667rem;
+}
+.instruction .instruct-hd {
+  height: 2.6667rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5867rem;
+}
+.instruction .instruct-hd h4 {
+  font-size: 0.7467rem;
+  color: #333333;
+}
+.instruction .instruct-hd h4 img {
+  width: 1.0133rem;
+  height: 1.0133rem;
+  vertical-align: middle;
+}
+.instruction .instruct-hd a {
+  font-size: 0.5867rem;
+  color: #999999;
+}
+.instruction .instruct-bd {
+  position: relative;
+  height: 12.64rem;
+}
+.instruction .instruct-bd .swiper-container {
+  width: 14.32rem;
+  height: 11.6267rem;
+}
+.instruction .instruct-bd .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.6);
+  opacity: 0.3;
+}
+.instruction .instruct-bd .swiper-slide img {
+  width: 9.0133rem;
+  height: 10.0267rem;
+  margin-bottom: 0.5333rem;
+}
+.instruction .instruct-bd .swiper-slide a {
+  font-size: 0.6667rem;
+  color: #333333;
+}
+.instruction .instruct-bd .swiper-slide-active,
+.instruction .instruct-bd .swiper-slide-duplicate-active {
+  transform: scale(1);
+  z-index: 1;
+  opacity: 1;
+}
+.study {
+  height: 15.3333rem;
+  background-color: #fff;
+  margin-top: 0.2667rem;
+  padding-bottom: 1.0667rem;
+}
+.study .study-hd {
+  height: 2.6667rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5867rem;
+}
+.study .study-hd h4 {
+  font-size: 0.7467rem;
+  color: #333333;
+}
+.study .study-hd h4 img {
+  width: 1.0133rem;
+  height: 1.0133rem;
+  vertical-align: middle;
+}
+.study .study-hd a {
+  font-size: 0.5867rem;
+  color: #999999;
+}
+.study .study-bd {
+  overflow: hidden;
+  position: relative;
+  height: 10.32rem;
+  padding-top: 0.4rem;
+}
+.study .study-bd .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: 0.64rem;
+}
+.study .study-bd .swiper-slide {
+  width: 7.7333rem !important;
+  height: 9.0133rem;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.study .study-bd .swiper-slide img {
+  display: block;
+  margin: 0 auto;
+  width: 7.2533rem;
+  height: 4.56rem;
+}
+.study .study-bd h5 {
+  font-size: 0.8rem;
+  padding: 0.4267rem 0.3467rem;
+  color: #333333;
+  font-weight: 400;
+  margin-bottom: 0.2667rem;
+}
+.study .study-bd p {
+  padding-left: 0.3467rem;
+  font-size: 0.5333rem;
+  color: #FF4A0A;
+}
+.study .study-bd span {
+  color: #A1A1A1;
+}
+.footer {
+  display: flex;
+  width: 100%;
+  height: 3.04rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  z-index: 999;
+}
+.footer a {
+  display: flex;
+  flex: 1;
+  color: #666;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5867rem;
+}
+.footer a img {
+  width: 1.0667rem;
+  height: 1.04rem;
+}
+.footer a img:nth-of-type(1) {
+  width: 1.04rem;
+  height: 1.0933rem;
+}
+.footer a img:nth-of-type(2) {
+  width: 1.0667rem;
+  height: 0.88rem;
+}
+.footer a p:nth-of-type(1) {
+  color: #2ccac7;
+}
