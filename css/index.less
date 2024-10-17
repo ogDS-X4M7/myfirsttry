@@ -243,22 +243,25 @@ a {
         justify-content: center;
         align-items: center;
         font-size: .5867rem;
+
         img {
             width: 1.0667rem;
             height: 1.04rem;
-            &:nth-of-type(1) {
-                width: 1.04rem;
-                height: 1.0933rem;
-            }
-            &:nth-of-type(2) {
-                width: 1.0667rem;
-                height: .88rem;
-            }
+            margin-bottom: .2667rem;
         }
-        p {
-            &:nth-of-type(1) {
-                color: #2ccac7;
-            }
+
+        &:nth-of-type(1) img {
+            width: 1.04rem;
+            height: 1.0933rem;
+        }
+
+        &:nth-of-type(2) img {
+            width: 1.0667rem;
+            height: .88rem;
+        }
+
+        &:nth-of-type(1) p {
+            color: #2ccac7;
         }
     }
 }
